@@ -1,0 +1,29 @@
+<!DOCTYPE html lang="fr">
+<html lang="fr">
+	<meta charset="UTF-8" />
+	<head>
+		<title>Métronome Personnalisable</title>
+		<style>
+			body {
+				width: 300px;
+				padding: 10px;
+				font-family: Arial, sans-serif;
+			}
+			input,
+			button {
+				margin: 5px 0;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Métronome Personnalisable</h2>
+		<input type="number" id="interval" min="1" max="60" value="1" />
+		<select id="unit">
+			<option value="60">minutes</option>
+			<option value="1">secondes</option>
+		</select>
+		<button id="start">Démarrer</button>
+		<button id="stop">Arrêter</button>
+		<script src="popup.js"></script>
+	</body>
+</html>

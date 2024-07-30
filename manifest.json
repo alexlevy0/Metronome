@@ -1,0 +1,32 @@
+{
+	"manifest_version": 3,
+	"name": "Métronome Personnalisable",
+	"version": "1.0",
+	"description": "Un métronome avec intervalle personnalisable entre 1mn et 1h",
+	"permissions": ["alarms", "storage", "tabs"],
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "icon16.png",
+			"48": "icon48.png",
+			"128": "icon128.png"
+		}
+	},
+	"background": {
+		"service_worker": "background.js"
+	},
+	"icons": {
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
+	"web_accessible_resources": [
+		{
+			"resources": ["metronome.mp3"],
+			"matches": ["<all_urls>"]
+		}
+	],
+	"content_security_policy": {
+		"extension_pages": "script-src 'self'; object-src 'self'"
+	}
+}
