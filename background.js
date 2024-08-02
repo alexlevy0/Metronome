@@ -1,11 +1,14 @@
 function playSound() {
-	chrome.tabs.create({ url: 'audio.html', active: true }, (tab) => {
-		setTimeout(() => {
-			chrome.tabs.remove(tab.id);
-		}, 1000);
+	chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+		let currentTab = tabs[0];
+		let currentIndex = currentTab.index;
+		chrome.tabs.create({ url: 'audio.html', active: true, index: currentIndex + 1 }, (tab) => {
+			setTimeout(() => {
+				chrome.tabs.remove(tab.id);
+			}, 1000);
+		});
 	});
 }
-
 chrome.alarms.onAlarm.addListener(() => {
 	playSound();
 });
