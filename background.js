@@ -5,7 +5,7 @@ function playSound() {
 		chrome.tabs.create({ url: 'audio.html', active: true, index: currentIndex }, (tab) => {
 			setTimeout(() => {
 				chrome.tabs.remove(tab.id);
-			}, 1000);
+			}, 4200);
 		});
 	});
 }
