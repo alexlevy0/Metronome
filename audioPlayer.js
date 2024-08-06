@@ -27,8 +27,27 @@ const quotes = [
 	"N'ayez pas peur d'échouer. Ayez peur de ne pas essayer.",
 	"Chaque jour est une nouvelle opportunité d'améliorer votre vie. Saisissez-la.",
 	"Le secret pour aller de l'avant est de commencer. - Mark Twain",
+	"Le courage n'est pas de ne jamais avoir peur, mais de choisir d'avancer malgré elle.",
+	"La vie n'est pas un problème à résoudre, mais une réalité à expérimenter. - Søren Kierkegaard",
+	'En temps de guerre, les grands leaders émergent non par leur pouvoir, mais par leur capacité à inspirer.',
+	"La motivation est ce qui vous fait démarrer, l'habitude est ce qui vous fait continuer. - Jim Ryun",
+	"Le véritable courage, c'est de garder sa sérénité malgré les tempêtes.",
+	"La vie est courte, mais elle offre toujours une seconde chance: elle s'appelle demain.",
+	"Les victoires se remportent d'abord dans l'esprit avant de se concrétiser sur le champ de bataille.",
+	'La motivation ne dure pas toujours, mais si vous faites en sorte de la raviver chaque jour, elle peut transformer votre vie.',
+	"Le courage, c'est savoir dire non quand il le faut et oui quand il le faut vraiment.",
+	"La vie n'est pas mesurée par le nombre de respirations que nous prenons, mais par les moments qui nous coupent le souffle.",
+	"En guerre comme en paix, la plus grande des batailles est celle que l'on mène contre ses propres peurs.",
+	'La motivation est le carburant qui allume le feu de la réussite.',
+	"Le courage ne consiste pas à ne jamais tomber, mais à se relever à chaque fois qu'on tombe.",
+	'Vivez comme si vous deviez mourir demain. Apprenez comme si vous deviez vivre éternellement. - Mahatma Gandhi',
+	'En temps de guerre, les hommes révèlent leur véritable nature.',
+	"La motivation vous pousse à commencer, l'habitude vous pousse à persévérer, et la passion vous emmène jusqu'au bout.",
+	"Le courage d'affronter l'inconnu est le premier pas vers la véritable liberté.",
+	"La vie est une aventure audacieuse ou elle n'est rien du tout. - Helen Keller",
+	"En guerre, le plus grand ennemi est souvent l'ignorance et l'intolérance.",
+	'Chaque journée est une nouvelle page de votre histoire, écrivez-la avec détermination et courage.',
 ];
-
 function getRandomQuote() {
 	return quotes[Math.floor(Math.random() * quotes.length)];
 }
